@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req, res) => {
-    res.send("Esta é a tela Inicial.")
+    res.send("Frederico Boaretti - RA: 010618017")
 })
 
 require("./controllers/login")(app)
@@ -20,9 +20,10 @@ require("./controllers/produtos")(app)
 
 
 app.use((req, res) => {
-    res.send("Página não encontrada")
+    res.send("Erro 404")
 })
 
 app.listen(process.env.PORT || 80, () => {
-    console.log("servidor online")
+    console.log("Servidor online")
 })
+

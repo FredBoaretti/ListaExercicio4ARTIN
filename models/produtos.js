@@ -19,8 +19,12 @@ const Produtos = moongose.Schema({
     },
     preco: {
         type: String,
-        default: 0,
         required: true
+    },
+    ativo: {
+        type: Boolean,
+        default: true,
+        required: false
     }
 })
 
